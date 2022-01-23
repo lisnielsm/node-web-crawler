@@ -25,6 +25,15 @@ This command creates a symbolic link between the project directory and executabl
 crawler --url http://books.toscrape.com/ --maxdist 2 --db books.txt    
 ```
 
+## Command Options
+-u, --url      The url of website to fetch                          [required]
+
+-m, --maxdist  The maximum distance from the initial website        [required]
+
+-d, --db       The name of the database                             [required]
+
+ --help     Show help 
+
 ## Note
 The database with the given name is created in the folder where the CLI command is called.
 

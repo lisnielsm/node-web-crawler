@@ -20,6 +20,8 @@ const argv = require("yargs/yargs")(process.argv.slice(2))
         describe: "The name of the database"
     })
     .demandOption(["url"], "Please specify the url of the website")
+    .demandOption(["maxdist"], "Please specify the max distance from main page")
+    .demandOption(["db"], "Please specify the database name")
     .help().argv;
 
 // get the url from arguments
